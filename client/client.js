@@ -18,6 +18,6 @@ Template.new.events = {
 Template.item.events({
   'click .close': function()
   {
-    Items.remove(this);
+    Meteor.call(removeItem, this);  
   }
 })
