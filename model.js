@@ -7,4 +7,4 @@ Meteor.methods({
 		$(id).fadeOut(400);
 		Items.remove(item);
 	}
-})
+});
