@@ -1,0 +1,30 @@
+<head>
+  <title>Shopping List</title>
+</head>
+
+<body>
+  {{> items}}
+</body>
+
+<template name="items">
+  <h1>Items</h1>
+  <uL>
+  {{#each items}}
+  	{{> item}}
+  {{/each}}
+  </ul>
+  {{> new}}
+</template>
+
+<template name="item">
+	<li class="item">
+    <button class="close">x</button>
+    <span class="name">{{name}}</span>
+  </li>
+</template>
+
+<template name="new">
+	<input id="new-item" type="text" placeholder="Item name"/>
+</template>
+
+
